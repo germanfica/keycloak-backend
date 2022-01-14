@@ -11,7 +11,9 @@ import org.springframework.security.core.session.SessionRegistryImpl;
 public class KeycloakConfig {
     // == beans methods ==
     @Bean
-    protected SessionRegistry buildSessionRegistry() { return new SessionRegistryImpl(); }
+    protected SessionRegistry buildSessionRegistry() {
+        return new SessionRegistryImpl();
+    }
 
     @Bean
     public KeycloakConfigResolver keycloakConfigResolver(){
